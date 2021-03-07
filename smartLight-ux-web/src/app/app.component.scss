@@ -1,0 +1,24 @@
+.mat-drawer-container{
+  height: 100%;
+
+  @media (max-width: 600px){
+    background-color: blue;
+  }
+}
+
+.mat-drawer {
+
+  & #MatDrawerHeader{
+    width: 17vw;
+  }
+
+  & #button{
+    padding: 16px;
+  }
+
+  #MatDrawerHeaderTitle{
+    width: 100%;
+    text-align: center;
+  }
+
+}

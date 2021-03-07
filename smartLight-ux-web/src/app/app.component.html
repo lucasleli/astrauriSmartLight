@@ -1,0 +1,27 @@
+<mat-drawer-container>
+  <mat-drawer mode="over" #drawer>
+    <div id="MatDrawerHeader">
+      <mat-toolbar color="warn">
+        <span>
+          <button mat-icon-button (click)="drawer.toggle()">
+            <mat-icon>menu</mat-icon>
+          </button>
+        </span>
+        <span id="MatDrawerHeaderTitle">INICIO</span>
+      </mat-toolbar>
+    </div>
+
+
+  </mat-drawer>
+  <mat-drawer-content>
+
+    <app-header [drawer]=drawer>
+    </app-header>
+
+    <router-outlet></router-outlet>
+
+    <app-footer></app-footer>
+
+  </mat-drawer-content>
+
+</mat-drawer-container>
