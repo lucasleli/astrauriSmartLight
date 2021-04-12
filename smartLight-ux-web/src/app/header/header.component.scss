@@ -2,3 +2,12 @@ span#title {
   width: 100%;
   text-align: center;
 }
+
+.mat-icon-button ::ng-deep .mat-button-focus-overlay{
+  display: none;
+}
+
+
+.mat-icon-button:hover{
+  background: rgba(81, 12, 130, 0.2);
+}

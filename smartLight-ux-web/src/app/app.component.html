@@ -1,13 +1,15 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 <mat-drawer-container>
   <mat-drawer mode="over" #drawer>
     <div id="MatDrawerHeader">
-      <mat-toolbar color="warn">
+      <mat-toolbar color="primary">
+        <span id="MatDrawerHeaderTitle">INICIO</span>
         <span>
           <button mat-icon-button (click)="drawer.toggle()">
-            <mat-icon>menu</mat-icon>
+            <mat-icon>arrow_back</mat-icon>
           </button>
         </span>
-        <span id="MatDrawerHeaderTitle">INICIO</span>
       </mat-toolbar>
     </div>
 

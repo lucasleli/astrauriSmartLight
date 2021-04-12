@@ -10,8 +10,9 @@ import { FooterComponent } from './footer/footer.component';
 import {MatToolbarModule} from "@angular/material/toolbar";
 import {MatMenuModule} from "@angular/material/menu";
 import {MatIconModule} from "@angular/material/icon";
-import {MatButtonModule} from "@angular/material/button";
+import { MatButtonModule } from "@angular/material/button";
 import {MatSidenavModule} from "@angular/material/sidenav";
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import {MatSidenavModule} from "@angular/material/sidenav";
     MatMenuModule,
     MatIconModule,
     MatButtonModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatCardModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
