@@ -1,1 +1,16 @@
-<p>flippable-card works!</p>
+<div class="container">
+  <div [ngClass]="isFlipped ? 'flipped' : ''" class="card">
+    <div class="front">
+      <ng-content select="flippable-card-front"></ng-content>
+      <div class="return_icon" (click)="flip()">
+        <i class="ion-ios-arrow-back"></i>
+      </div>
+    </div>
+    <div class="back">
+      <ng-content select="flippable-card-back"></ng-content>
+      <div class="return_icon" (click)="flip()">
+        <i class="ion-ios-arrow-back"></i>
+      </div>
+    </div>
+  </div>
+</div>

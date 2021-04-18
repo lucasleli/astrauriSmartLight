@@ -1,1 +1,28 @@
-<app-light-card></app-light-card>
+<!--<div *ngFor = "let lamp of lampadas">
+<app-light-card [lamp] = 'lamp'>
+</app-light-card>
+</div>-->
+
+
+<div>
+  <flippable-card>
+
+    <flippable-card-front>
+      <app-light-card [lamp] = 'lampadas[0]'>
+      </app-light-card>
+    </flippable-card-front>
+
+    <flippable-card-back>
+      <div>
+        <mat-card>
+          <mat-card-header>this is a test</mat-card-header>
+          <mat-card-content>this is the content</mat-card-content>
+          <mat-card-actions>
+            <button mat-raised-button>testButton</button>
+          </mat-card-actions>
+        </mat-card>
+      </div>
+    </flippable-card-back>
+
+  </flippable-card>
+</div>

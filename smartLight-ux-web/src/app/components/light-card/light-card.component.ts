@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {Lamp} from '../../model/lamp';
 
 @Component({
   selector: 'app-light-card',
@@ -7,22 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LightCardComponent implements OnInit {
 
-  lampadas: any[] = [
-    {
-      nome : 'lampada 1',
-      status : true
-    },
-    {
-      nome : 'lampada 2',
-      status : false
-    },
-    {
-      nome : 'lampada 3',
-      status : true
-    }
-  ];
+  @Input() lamp: Lamp;
 
-  constructor() { }
+  constructor() {
+    this.lamp = new Lamp('initializer', false);
+  }
 
   ngOnInit(): void {
   }
