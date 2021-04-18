@@ -13,13 +13,15 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatCardModule} from '@angular/material/card';
+import { LightCardComponent } from './components/light-card/light-card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CockpitComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    LightCardComponent
   ],
   imports: [
     BrowserModule,
