@@ -14,6 +14,7 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatCardModule} from '@angular/material/card';
 import { LightCardComponent } from './components/light-card/light-card.component';
+import {FlippableCardModule} from './components/flippable-card/flippable-card.module';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,7 @@ import { LightCardComponent } from './components/light-card/light-card.component
     CockpitComponent,
     HeaderComponent,
     FooterComponent,
-    LightCardComponent
+    LightCardComponent,
   ],
   imports: [
     BrowserModule,
@@ -32,7 +33,8 @@ import { LightCardComponent } from './components/light-card/light-card.component
     MatIconModule,
     MatButtonModule,
     MatSidenavModule,
-    MatCardModule
+    MatCardModule,
+    FlippableCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
